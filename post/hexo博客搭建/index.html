@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="your description">
+    <meta name="Author" content="your name">
+    <meta name="keywords" content="hugo blog">
+    <link rel="stylesheet" href=https://yizhimo0.github.io/css/syntax.css>
+    <link rel="stylesheet" href=https://yizhimo0.github.io/css/style.css>
+    <script src="https://kit.fontawesome.com/1b7478c139.js" crossorigin="anonymous"></script>
+    <title>YIZHI</title>
+  </head><body><aside id="sidenav">
+    <header>
+    
+        <a href=https://yizhimo0.github.io/><img src="https://yizhimo0.github.io/avatar.png" alt="avatar"></a>
+        
+    
+
+    <a id="branding" href=https://yizhimo0.github.io/>
+        
+            YIZHI
+        
+    </a>
+    </header>
+
+    <nav>
+        
+            		
+            <a href="/"
+                
+            >
+                <i class="fas fa-home fa-sm"></i>
+                <span>home</span>
+            </a>
+        
+            		
+            <a href="/post"
+                
+            >
+                <i class="fas fa-keyboard fa-ms"></i>
+                <span>blog</span>
+            </a>
+        
+            		
+            <a href="/tags"
+                
+            >
+                <i class="fas fa-tags fa-ms"></i>
+                <span>tags</span>
+            </a>
+        
+            		
+            <a href="https://yizhimo0.github.io/"
+                
+                    target="_blank"
+                
+            >
+                <i class="fab fa-github fa-ms"></i>
+                <span>github</span>
+            </a>
+        
+            		
+            <a href="/contact"
+                
+            >
+                <i class="far fa-envelope"></i>
+                <span>contact</span>
+            </a>
+        
+    </nav>
+</aside>
+<main id="main">
+            <a href="javascript:void(0)" id="closebtn" onclick="navToggle()"><i class="fas fa-bars fa-lg"></i></a>
+            <div class="content">
+    
+    <h1 id="title">hexo 博客搭建</h1>
+    
+      
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一-用-hexo-框架搭建个人博客">一. 用 hexo 框架搭建个人博客</a>
+      <ul>
+        <li><a href="#参考文献">参考文献</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    <h2 id="一-用-hexo-框架搭建个人博客">一. 用 hexo 框架搭建个人博客</h2>
+<hr>
+<p>下载 node.js
+下载 git
+(具体步骤自己百度)</p>
+<hr>
+<hr>
+<p>下载完成后_打开_ git bash</p>
+<pre><code>node -v
+v12.16.1 (版本编号)
+
+npm -v
+6.13.4    
+</code></pre>
+<p>到这里就安装 node.js 完成</p>
+<hr>
+<hr>
+<p>开始安装 hexo 博客框架</p>
+<pre><code> npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+<p>可能需要一段时间
+<!-- raw HTML omitted --></p>
+<pre><code>cnpm install -g hexo-cli
+
+hexo -v (验证)
+</code></pre>
+<p>hexo安装完成</p>
+<hr>
+<hr>
+<p>创建文件夹</p>
+<pre><code>cd d:/
+(更改存放地址)
+
+mkdir blog 
+</code></pre>
+<p>进入 bolg</p>
+<pre><code>cd d:blog/
+</code></pre>
+<p>生成一个博客</p>
+<pre><code>subo hexo init
+
+....(可能会时间有点长)
+</code></pre>
+<p>查看目录生成的文件</p>
+<pre><code>ls -l
+</code></pre>
+<p>启动博客</p>
+<pre><code>hexo s
+</code></pre>
+<p>会得到 http://localhost:4000/</p>
+<p><em>这里 ctrl +C 可以退出</em>
+<!-- raw HTML omitted -->
+创建文章</p>
+<pre><code>hexo n &quot;我的第一篇博客文章&quot;
+
+ls (查看目录)
+</code></pre>
+<p>编辑文章</p>
+<pre><code>cd source/_posts/
+
+ls -l
+
+vim 我的第一篇博客文章.md
+
+i (插入)
+
+(markdown 来写)
+
+##内容
+---
+内容
+内容
+---
+内容
+内容
+---
+</code></pre>
+<p>按 ESC，左下角就可以进行输入
+:w 保存但不退出
+:wq 保存并退出
+:q 退出
+:q! 强制退出，不保存
+:e! 放弃所有修改，从上次保存文件开始再编辑命令历史</p>
+<p>注: 可以 vscode 等其他其他软件打开编辑
+<!-- raw HTML omitted -->
+退回</p>
+<pre><code>cd ../..
+</code></pre>
+<p>清理</p>
+<pre><code>hexo clean
+</code></pre>
+<p>生成</p>
+<pre><code>hexo g
+</code></pre>
+<p>重新启动</p>
+<pre><code>hexo s
+</code></pre>
+<p>有刚才输入的内容,到这里hexo博客的搭建已经完成了</p>
+<hr>
+<h3 id="参考文献">参考文献</h3>
+<p><a href="http://www.bilibili.com">www.bilibili.com</a></p>
+
+    
+    <div class="nav-next-prev">
+        <div class="nav-prev">
+            
+                <a class="grayed-out" href="javascript:void()"><i class="fas fa-chevron-left"></i></a>
+            
+        </div>
+        <a class="nav-top" href="#">top</i></a>
+        <div class="nav-next">
+            
+                <a href="https://yizhimo0.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><i class="fas fa-chevron-right"></i></a>
+            
+        </div>
+    </div>
+    
+
+            </div><footer>
+<div class="footer-content">
+
+  <div class="contact-info">
+      
+          <div class="footer-mail">
+          <i class="far fa-envelope"></i> <a href="mailto:199911199@gmail.com">199911199@gmail.com</a> </div>
+      
+      
+      <div class="footer-phone">
+          <i class="fas fa-phone"></i> 86&#43; 8888888888 
+      </div>
+      
+  </div>
+
+
+<p class="copyright meta">Copyright © 2021–2021, Steve Francia and the Hugo Authors; all rights reserved.</p>
+
+</div>
+</footer></main>
+    </body>
+    <script src=https://yizhimo0.github.io/js/navbutton.js></script>
+</html>
